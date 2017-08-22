@@ -1,0 +1,417 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Microsoft Jhenghei;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: white;
+}
+
+li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	display: block;
+	margin: 0 auto;
+	width: 960px;
+}
+
+.clearfix{
+	clear: both;
+}
+
+
+/* header */
+
+#heaer{
+	display: block;
+}
+
+#logo{
+	float: left;
+}
+
+#logo img{
+	display: block;
+}
+#menu{
+	float: right;
+
+	display: block;
+}
+
+#content .img{
+	padding: 200px 0;
+    background-image: url(http://lorempixel.com/1920/1080/);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+/*#menu img{
+	float: left;
+}*/
+
+#menu ul{
+	margin: 0;
+	padding: 0;
+    float: right;
+	display: block;
+}
+
+#menu li{
+	line-height: 98px;
+	float: left;
+/*	border: 2px solid #f5f5f5;*/
+}
+
+#menu .goaway{
+	padding-left: 60px;
+}
+
+#menu a{
+	padding: 10px;
+	padding-top: 0px;
+	font-size: 20px;
+	color: #505050;
+}
+
+#menu a:hover{
+	color:red;
+	transition: all 0.3s;
+}
+
+/* sidebar */
+.sidebar{
+	position: relative;
+}
+
+.sidebar-li{
+	position: absolute;
+	top: 50%;
+	left: 40%;
+}
+.sidebar li{
+	float: left;
+}
+
+.sidebar a{
+	text-align: center;
+	padding: 7px;
+	color:#505050;
+}
+
+.sidebar-li a:hover{
+	color:red;
+	transition: all 0.3s;
+}
+
+.left{
+	float: left;
+	margin-bottom: 100px;
+	padding-top: 70px;
+	padding-left: 0px;
+    
+}
+
+/*.left li{
+	padding-right: 75px;
+}*/
+
+.left .no-PR{
+	padding-right: 0;
+}
+
+.row{
+	padding-top: 100px;
+}
+
+
+
+
+.col-41{
+	width: 33.33333%;
+	float: left;
+	margin-bottom: 15px;
+	padding-left: 0px;
+
+}
+
+.thumbnail{
+	position: relative;
+}
+
+.thumbnail {
+	width: 100%;
+	height: auto;
+}
+
+.thumbnail a{
+	color: #333;
+}
+
+.thumbnail img{
+	width: 100%;
+	height: auto;
+}
+
+
+
+.coverab{
+	position: absolute;
+	background: rgba(255, 255, 255, 0.9);
+    border: 20px solid rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+	bottom: 0;
+	right: 0;
+    text-align: center;
+    opacity: 0;
+    /*CSS3*/
+    transition: all 0.3s;
+}
+
+.thumbnail .coverab:hover {
+    opacity: 1;
+}
+
+.thumbnail .coverab >a {
+    /*position: relative;*/
+    color: #333;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.padding-bottom{
+	padding-bottom: 15px;
+}
+
+
+
+/* 最新消息 */
+.news{
+	margin-bottom: 100px;
+}
+
+.news ul{
+	padding-left: 0px;
+}
+
+.col-3{
+	float: left;
+	padding-right: 13px;
+}
+
+
+/*.col-3 ul{
+	padding-left: : 0px;
+	padding-top: 0px;
+}
+
+.col-3 li{
+	padding: 0;
+	width: 25%;
+	margin-bottom: 15px;
+}*/
+
+.info{
+	text-align: left;
+}
+
+.date,.text{
+	margin: 0;
+	padding: 0;
+	color: 	#FA8072;
+}
+
+.date{
+	margin-bottom: 5px;
+}
+
+.date p:hover{
+	color:red;
+	transition: all 0.3s;
+}
+
+
+/* 近期活動 */
+
+.nearly {
+	padding-left: 0px;
+}
+
+.abgn li{
+	padding-right: 19px;
+}
+
+.abgn{
+	float: left;
+	position: relative;
+	overflow: hidden;
+	width: 300px;
+	height: 100px;
+}
+
+.abgn .op{
+	padding-right: 19px;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.abgn:hover img {
+	width: 300px;
+	height: 100px;
+	-webkit-transform: translate(-10px, -8px);
+	-moz-transform: translate(-10px, -8px);
+	-o-transform: translate(-10px, -8px);
+	transform: translate(-10px, -8px);
+} 
+
+.abgn::hover .op {
+	opacity: 0;
+}
+
+
+
+.col-4 li{
+	width: 33.3333%;
+
+/*	padding-left: 18px;*/
+}
+
+
+
+
+.abgne-frame-20140107-2 {
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 164px;
+}
+.abgne-frame-20140107-2 .overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.4s linear;
+    -moz-transition: opacity 0.4s linear;
+    -o-transition: opacity 0.4s linear;
+    transition: opacity 0.4s linear;
+}
+.abgne-frame-20140107-2 img {
+    width: 270px;
+    height: 179px;
+    -webkit-transform: translate(-12.5px, -8px);
+    -moz-transform: translate(-12.5px, -8px);
+    -o-transform: translate(-12.5px, -8px);
+    transform: translate(-12.5px, -8px);
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.abgne-frame-20140107-2:hover img {
+    width: 250px;
+    height: 164px;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.abgne-frame-20140107-2:hover .overlay {
+    opacity: 0;
+}
+.abgne-frame-20140107-1, .abgne-frame-20140107-2 {
+    float: left;
+    margin-right: 40px;
+}
+
+
+
+
+/* footer */
+
+.bar-img{
+	margin-top: 300px;
+    padding: 50px 0;
+    background-image: url(http://lorempixel.com/1920/1080/);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.col-2{
+	float: left;
+}
+
+.col-2 h3{
+	margin: 0;
+}
+
+.group-tent ul{
+	margin: 0;
+	margin-top: 10px;
+	padding: 0 73px 0 0;
+}
+
+.group-tent a{
+	color: #505050;
+}
+
+.group-tent a:hover{
+	opacity: 0.7;
+}
+
+.col-2 .no-PR ul{
+	padding-right: 0px;
+}
+
+/*.op a{
+	display: block;
+	opacity: 0.7;
+}*/
+
+.group-content ul{
+	margin: 70px 0 30px 0;
+	padding: 0 73px 0 0;
+}
+
+.group-content a{
+	color: #505050;
+}
+
+.group-content a:hover{
+	opacity: 0.7;
+}
+
+#copyright{
+	margin-bottom: 50px;
+	border-top: #dedede 1px solid;
+}
+
+.fltL{
+	float: left;
+}
+
+.fltB{
+	float: right;
+}
